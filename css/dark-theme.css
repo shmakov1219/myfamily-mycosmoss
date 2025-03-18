@@ -1,0 +1,38 @@
+body.dark {
+    background-color: #111;
+/*    color: #999;*/
+}
+
+header {
+    background-color: #111;
+}
+
+footer {
+    background-color: #222;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #999;
+}
+
+p {
+  color: #999;
+}
+
+a {
+  color: #fff;
+}
+
+#slider {
+  background-color: #111;
+}
+
+li {
+	color:999;
+}

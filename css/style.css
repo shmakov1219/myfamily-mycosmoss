@@ -1,0 +1,534 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.logo a {
+    display: block; /*  Чтобы ссылка занимала всю область логотипа */
+}
+
+.logo img {
+    height: 50px; /*  Задайте высоту логотипа */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ADD8E6; /* Основной цвет */
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ADD8E6;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#slider {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.slider {
+    position: relative; /*  Для позиционирования элементов управления */
+    overflow: hidden; /*  Скрываем слайды, выходящие за границы */
+}
+
+.slider-wrapper {
+    display: flex; /*  Выстраиваем слайды в горизонтальную линию */
+    transition: transform 0.3s ease; /*  Плавная анимация */
+}
+
+.slide {
+    flex: 0 0 100%; /*  Каждый слайд занимает 100% ширины контейнера */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /*  Выравниваем контент по вертикали */
+}
+
+.slide img {
+    max-width: 40%; /*  Регулируйте ширину изображения */
+    height: auto;
+    margin-right: 20px;
+}
+
+.slide-content {
+    flex: 1; /*  Текстовый контент занимает оставшееся пространство */
+}
+
+.slider-controls {
+    position: absolute; /*  Позиционируем кнопки поверх слайдера */
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5); /*  Полупрозрачный фон */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rating .star {
+    color: gold; /*  Желтый цвет для звезд */
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Стили для формы авторизации */
+#login {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+#login .container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /*  Чтобы padding не увеличивал ширину */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Стили для секции "О нас" */
+#about {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /*  Выстраиваем элементы в столбик */
+    align-items: center; /*  Выравниваем элементы по центру по горизонтали */
+}
+
+.about-image {
+    max-width: 50%; /*  Регулируйте ширину изображения */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    text-align: justify; /*  Выравнивание текста по ширине */
+    margin-bottom: 10px;
+}
+
+/* Стили для секции "Мероприятия" */
+#events {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse; /*  Убираем отступы между ячейками */
+}
+
+.events-table td {
+    padding: 10px;
+    vertical-align: top; /*  Выравниваем контент по верхнему краю ячейки */
+    width: 33.33%; /*  Каждая ячейка занимает треть ширины таблицы */
+    box-sizing: border-box; /*  Чтобы padding не увеличивал ширину ячейки */
+}
+
+.event-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.event-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    margin-bottom: 5px;
+}
+
+.event-card p {
+    margin-bottom: 10px;
+}
+
+.rating .star {
+    color: gold;
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Стили для секции "Поиск" */
+#search {
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#search-form button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: white;
+    display: none; /*  Скрываем изначально */
+    position: absolute;
+    width: 70%; /*  Соответствует ширине поля ввода */
+    z-index: 1; /*  Чтобы подсказки были поверх других элементов */
+}
+
+#search-suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#search-suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+#reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.reviews-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+    flex: 0 0 80%; /* Ширина отзыва (можно менять) */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по вертикали */
+    text-align: center; /* Центрирование текста */
+}
+
+.review-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Обрезать изображение под круг */
+}
+
+.review-card a {
+    margin-top: 10px;
+}
+
+.review-card .review-date {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Стили для секции подписки */
+#podpiska {
+    padding: 20px;
+    background-color: #e9ecef;
+    text-align: center; /* Центрирование формы */
+}
+
+#podpiska h2 {
+    margin-bottom: 20px;
+}
+
+#subscription-form {
+    max-width: 400px;
+    margin: 0 auto; /* Центрирование формы */
+    text-align: left; /* Выравнивание текста слева */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+#subscription-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Кнопка во всю ширину */
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*  Чтобы элементы переносились на новую строку при необходимости */
+}
+
+.footer-content > div {
+    width: 30%; /*  Примерно треть ширины */
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-navigation li {
+    margin-bottom: 5px;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-subscription {
+    text-align: left;
+}
+
+.footer-subscription .form-group {
+    margin-bottom: 10px;
+}
+
+.footer-subscription #subscription-form button {
+    width: auto; /*  Чтобы кнопка не занимала всю ширину */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin-bottom: 5px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* Стили для страницы регистрации */
+#registration {
+    padding: 20px;
+}
+
+#registration .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gender-options label {
+    margin-right: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+

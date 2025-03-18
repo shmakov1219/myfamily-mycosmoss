@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo">
+                        <a href="index.html">
+                             <img src="media\logo.png" alt="Логотип Пензенского планетария">
+                        </a>
+                    </div>
+                    Моя семья - мой космос
+                </a>
+            </div>
+    </header>
+
+    <main>
+        <section id="registration">
+            <div class="container">
+                <h2>Регистрация на сайте</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstName">Имя:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span class="error-message" id="firstName-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Фамилия:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <span class="error-message" id="lastName-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Возраст:</label>
+                        <div class="age-options">
+                         
+                            <input id="ageRadioOption" type="radio" name="ageOption" value="radio">
+                        
+                            <input type="number" name="age" id = "ageRadio" required>
+                               
+                        </div>
+                        <span class="error-message" id="age-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Пол:</label>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="male" required> Мужской
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female" required> Женский
+                            </label>
+                        </div>
+                        <span class="error-message" id="gender-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Повторите пароль:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <span class="error-message" id="confirmPassword-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo">Семейная фотография:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                        <span class="error-message" id="photo-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="privacy" required>
+                            Я согласен(на) на обработку персональных данных
+                        </label>
+                        <span class="error-message" id="privacy-error"></span>
+                    </div>
+
+                    <button type="submit" class="button">Зарегистрироваться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--  Здесь может быть подвал сайта -->
+    </footer>
+
+    <script src="js/registration.js"></script>
+</body>
+</html>

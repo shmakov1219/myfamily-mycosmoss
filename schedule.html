@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание мероприятий</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px; /*  Расстояние между таблицами */
+        }
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .slot {
+            width: 50px; /*  Квадратные ячейки */
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            text-align: center; /*  Добавляем выравнивание текста по центру */
+         vertical-align: middle; /* New Line */
+        }
+        .full {
+            background-color: #ffcccc; /* Красный цвет для заполненных слотов */
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Шапка сайта -->
+    </header>
+
+    <main>
+        <section id="schedule">
+            <div class="container">
+                <h2>Расписание мероприятий</h2>
+
+                <h3>Галактика всех галактик</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Места</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>09:00 - 10:00</th>
+                            <td class="slot">50</td>
+                        </tr>
+                        <tr>
+                            <th>10:00 - 11:00</th>
+                            <td class="slot">40</td>
+                        </tr>
+                        <tr>
+                            <th>11:00 - 12:00</th>
+                            <td class="slot">35</td>
+                        </tr>
+                        <tr>
+                            <th>12:00 - 13:00</th>
+                            <td class="slot full">0</td>
+                        </tr>  
+                         <tr>
+                            <th>13:00 - 14:00</th>
+                            <td class="slot">50</td>
+                        </tr>
+                        <tr>
+                            <th>14:00 - 15:00</th>
+                            <td class="slot">40</td>
+                        </tr>
+                         <tr>
+                            <th>15:00 - 16:00</th>
+                            <td class="slot">20</td>
+                        </tr>  
+                         <tr>
+                            <th>16:00 - 17:00</th>
+                            <td class="slot">40</td>
+                        </tr>
+                        <tr>
+                            <th>17:00 - 18:00</th>
+                            <td class="slot">20</td>
+                        </tr>  
+                         <tr>
+                            <th>18:00 - 19:00</th>
+                         <td class="slot">50</td>
+                        </tr>
+                        <tr>
+                            <th>19:00 - 20:00</th>
+                            <td class="slot ">0</td>
+                        </tr>  
+                         <tr>
+                            <th>20:00 - 21:00</th>
+                            <td class="slot ">10</td>
+                        </tr>                                               
+                    </tbody>
+                </table>
+
+                <h3>Познавайка</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Места</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>09:00 - 10:00</th>
+                            <td class="slot">32</td>
+                        </tr>
+                        <tr>
+                            <th>10:00 - 11:00</th>
+                            <td class="slot">15</td>
+                        </tr>
+                        <tr>
+                            <th>11:00 - 12:00</th>
+                            <td class="slot">22</td>
+                        </tr>
+                        <tr>
+                            <th>12:00 - 13:00</th>
+                            <td class="slot">18</td>
+                        </tr>
+                         <tr>
+                            <th>13:00 - 14:00</th>
+                           <td class="slot ">18</td>
+                        </tr>
+                         <tr>
+                            <th>14:00 - 15:00</th>
+                            <td class="slot">30</td>
+                        </tr>
+                          <tr>
+                            <th>15:00 - 16:00</th>
+                           <td class="slot ">4</td>
+                        </tr>
+                         <tr>
+                            <th>16:00 - 17:00</th>
+                           <td class="slot">1</td>
+                        </tr>
+                         <tr>
+                            <th>17:00 - 18:00</th>
+                            <td class="slot ">15</td>
+                        </tr>
+                         <tr>
+                            <th>18:00 - 19:00</th>
+                     <td class="slot">17</td>
+                        </tr>
+                         <tr>
+                            <th>19:00 - 20:00</th>
+                         <td class="slot full">0</td>
+                        </tr>
+                         <tr>
+                            <th>20:00 - 21:00</th>
+                       <td class="slot">7</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+                <h3>Белка и стрелка</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Места</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>09:00 - 10:00</th>
+                            <td class="slot">75</td>
+                        </tr>
+                        <tr>
+                            <th>10:00 - 11:00</th>
+                            <td class="slot">60</td>
+                        </tr>
+                        <tr>
+                            <th>11:00 - 12:00</th>
+                            <td class="slot">45</td>
+                        </tr>
+                        <tr>
+                            <th>12:00 - 13:00</th>
+                            <td class="slot">30</td>
+                        </tr>
+                         <tr>
+                            <th>13:00 - 14:00</th>
+                           <td class="slot">25</td>
+                        </tr>
+                           <tr>
+                            <th>14:00 - 15:00</th>
+                            <td class="slot">50</td>
+                        </tr>
+                           <tr>
+                            <th>15:00 - 16:00</th>
+                            <td class="slot">0</td>
+                        </tr>
+                                                  
+                         <tr>
+                            <th>16:00 - 17:00</th>
+                           <td class="slot">20</td>
+                         </tr>
+                        <tr>
+                            <th>17:00 - 18:00</th>
+                      <td class="slot ">17</td>
+                        </tr>
+                         <tr>
+                            <th>18:00 - 19:00</th>
+                         <td class="slot">45</td>
+                        </tr>
+                            <tr>
+                            <th>19:00 - 20:00</th>
+                             <td class="slot">45</td>
+                        </tr>
+                            <tr>
+                            <th>20:00 - 21:00</th>
+                           <td class="slot">40</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Подвал сайта -->
+    </footer>
+</body>
+</html>
